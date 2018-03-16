@@ -34,9 +34,9 @@
 >     inline 行内元素，行内显示
 >     inline-block 可设置宽高，行内显示
 >     table 作为块级表格来显示（类似 <table>），表格前后带有换行符。
->     list-item 作为列表显示
->     inherit
-
+>     list-item 作为列表显示
+>     inherit
+ 
 6. display:inline-block 什么时候会显示间隙(li之间)
 > 元素之间的空白（回车、空格）也算字符。解决方法：删除空白、将父元素font-size设置为0、margin设置负值
 
@@ -46,3 +46,13 @@
 >     fixed 相对浏览器窗口
 >     static 正常位置
 >     inherit
+
+8. 纯CSS创建一个三角形
+>   #demo {
+    width: 0;
+    height: 0;
+    border-width: 20px;
+    border-style: solid;
+    border-color: transparent transparent red transparent;
+  }
+
