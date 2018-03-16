@@ -48,6 +48,7 @@
 >     inherit
 
 8. 各种position元素的包含块
+> ![按此图判断](https://raw.githubusercontent.com/0ragdoll0/Front-end-Q-A/master/pic/containingblock.PNG)
 
 9. 纯CSS创建一个三角形
 > 创建一个div将其宽高设置为0，设置border宽度且只显示某一条边->等腰三角形且高为border宽度
