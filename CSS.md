@@ -63,13 +63,23 @@
 10. 品字布局
 > 上面div宽100%，下面两个div宽50%，下面两个div设置display:inline-block[例](https://codepen.io/0ragdoll0/pen/OvyQLN)
 
-11.css多列等高
+11. css多列等高
 >       父容器元素设置overfolw:hidden,多列padding-bottom和margin-bottom设置为数值较大的相反数（可以相互抵消）[例](https://codepen.io/0ragdoll0/pen/Ldpeoq)
 
 >       因为背景是包含padding部分的，比其他列缺少的部分用padding补足。overflow设置为hidden，隐藏最高列content高度以外的内容
 
 12. 初始化CSS样式
->       各个浏览器的默认样式不同，通过初始化CSS样式对其进行统一。
->       最简单的方法是*{padding:0;margin:0}，但不建议，因为将所有标签的样式初始化一遍将加大网站运行的负载
->       各大网站样式初始化
+> 各个浏览器的默认样式不同，通过初始化CSS样式对其进行统一。        
+> 最简单的方法是*{padding:0;margin:0}，但不建议，因为将所有标签的样式初始化一遍将加大网站运行的负载。      
+> 各大网站样式初始化[4个初始化](https://github.com/0ragdoll0/layout/tree/master/css%20initialization)
 
+13. CSS里的visibility属性有个collapse属性值是干嘛用的？在不同浏览器下以后什么区别？
+> 对于普通元素visibility:collapse;会将元素完全隐藏,不占据页面布局空间,与display:none;表现相同.       
+> 如果目标元素为table,visibility:collapse;将table隐藏,但是会占据页面布局空间.        
+> 仅在Firefox下起作用,IE会显示元素,Chrome会将元素隐藏,但是占据空间.
+
+14. JavaScript有几种类型的值？，你能画一下他们的内存图吗？        
+> 基本数据类型（undefined，null，boolean，number，string）和引用数据类型（object）       
+> 基本数据类型具有固定的内存大小，属于频繁使用数据，在栈中储存。        
+> 引用数据类型没有固定的内存大小，放在栈中会影响程序运行性能。寻找引用类数据时首先在栈中找寻其指针，根据其指针在堆中找到引用类数据。     
+> 图如下![](https://github.com/0ragdoll0/Front-end-Q-A/blob/master/pic/stackandheap.PNG)
