@@ -47,9 +47,9 @@
 >     static 正常位置
 >     inherit
 
+8. 各种position元素的包含块
 
-
-8. 纯CSS创建一个三角形
+9. 纯CSS创建一个三角形
 > 创建一个div将其宽高设置为0，设置border宽度且只显示某一条边->等腰三角形且高为border宽度
 #demo {
     width: 0;
@@ -59,4 +59,16 @@
     border-color: transparent transparent red transparent;
   }
 
-9. 
+10. 品字布局
+> 上面div宽100%，下面两个div宽50%，下面两个div设置display:inline-block[例](https://codepen.io/0ragdoll0/pen/OvyQLN)
+
+11.css多列等高
+>       父容器元素设置overfolw:hidden,多列padding-bottom和margin-bottom设置为数值较大的相反数（可以相互抵消）[例](https://codepen.io/0ragdoll0/pen/Ldpeoq)
+
+>       因为背景是包含padding部分的，比其他列缺少的部分用padding补足。overflow设置为hidden，隐藏最高列content高度以外的内容
+
+12. 初始化CSS样式
+>       各个浏览器的默认样式不同，通过初始化CSS样式对其进行统一。
+>       最简单的方法是*{padding:0;margin:0}，但不建议，因为将所有标签的样式初始化一遍将加大网站运行的负载
+>       各大网站样式初始化
+
