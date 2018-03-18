@@ -45,3 +45,37 @@
 ```
 <div style="height:1px;overflow:hidden;background:red"></div>
 ```
+
+10. html5有哪些新特性、移除了那些元素？如何处理HTML5新标签的浏览器兼容问题？如何区分 HTML 和 HTML5？
+* HTML5不是SGML子集，主要是关于图像，位置，储存，多任务等功能的增加
+> 绘画用canvas；媒介video和audio元素；
+> 本地离线存储localStorage长期存储数据，浏览器关闭后数据不丢失;
+> sessionStorage 的数据在浏览器关闭后自动删除;
+> 语义化内容元素：header,nav,article,section,aside,footer
+> 表单控件：calendar、date、time、email、url、search;
+> 新的技术：webworker, websocket, Geolocation;
+
+* 移除的元素：
+> 纯表现的元素：basefont，big，center，font, s，strike，tt，u;
+> 对可用性产生负面影响的元素：frame，frameset，noframes；
+
+* 支持HTML5新标签：
+> IE8/IE7/IE6支持通过document.createElement方法产生的标签
+> 可以利用这一特性让这些浏览器支持HTML5新标签
+> 浏览器支持新标签后，还需要添加标签默认的样式
+
+* 如何区分HTML5
+> DOCTYPE声明\新增的结构元素\功能元素
+
+11. HTML5的离线储存怎么使用，工作原理能不能解释一下？
+>     HTML5引入manifest文件，在文件中定义需要缓存的文件，支持manifest的浏览器会将manifest文件中定义的文件缓存到本地，使得在没有网络连接时也可以访问页面。
+
+>     ![访问流程图](https://raw.githubusercontent.com/0ragdoll0/Front-end-Q-A/master/pic/manifest.jpg)   
+>     1.使用:```<html manifest = "cache.manifest">```    
+>     2.文件组成：版本号（只修改缓存文件内容，无删减或增加，可更新版本号以更新缓存）、CACHE（需要缓存下载的文件）、NETWORK(需要与服务器的连接，且不会被缓存)、FALLBACK(当页面无法访问时的回退页面)   
+>     3.解析：在线的情况下，第一次访问app，请求manifest文件，对其中的文件进行下载进行离线缓存。不是第一次访问时，会根据已有的离线缓存文件显示页面，再比较当前manifest与之前的manifest如果发生改变，重新下载相关文件进行离线缓存（因此即使manifest改变，需要二次刷新才能呈现新的页面，如果需要资源马上就能生效，那么可以使用window.applicationCache.swapCache()方法来使之生效）。离线情况下，直接使用离线存储的资源。   
+>     注意：浏览器在下载manifest文件中的资源的时候，它会一次性下载所有资源，如果某个资源由于某种原因下载失败，那么这次的所有更新就算是失败的，浏览器还是会使用原来的资源。
+  
+12. HTML5的form如何关闭自动完成功能
+>      给不想要提示的 form 或某个 input 设置为 autocomplete=off
+
