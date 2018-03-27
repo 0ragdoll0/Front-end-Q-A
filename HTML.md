@@ -81,3 +81,21 @@
 
 13. 比较Canvas与SVG
 > ![](https://raw.githubusercontent.com/0ragdoll0/Front-end-Q-A/master/pic/Canvas%26SVG.PNG)
+
+14. 客户端数据存储（三种都是名值对）
+* cookie
+>     属性：expires（max-age）、domain、path、secure（https）、HttpOnly。--->不发送给服务器，只有名值对才被发送。     
+>     设置/获取：客户端（document.cookie,多个cookie设置分开写）/服务器端     
+>     适用：每次请求都要携带的信息（例如身份认证信息），少量的数据。
+
+* sessionStorage(Storage实例)
+>     方法：clear() getItem key(index) removeItem() setItem(name,value)    
+>     设置/获取：客户端调用上述函数     
+>     适用：数据严格控制在客户端上，无需将数据持续发回服务器。存储某个特定会话的数据，数据保存到会话关闭。    
+>     注：绑定于某个服务器对话，文件在本地运行是不可用，浏览器崩溃重启后依然可用。
+
+* localStorage(HTML5 Storage实例)
+>     方法：同上      
+>     设置/获取：同上    
+>     适用：跨对话存储数据，使用removeItem/delete/清除浏览器缓存清除数据。适合在客户端保存用户偏好设置。       
+>     注：访问同一个localStorage，页面必须来自同一域名和端口，使用同一协议，相当于globalStorage[location.host]。globalStorage不是Storage实例。
