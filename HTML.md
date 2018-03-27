@@ -79,3 +79,5 @@
 12. HTML5的form如何关闭自动完成功能
 >      给不想要提示的 form 或某个 input 设置为 autocomplete=off
 
+13. 比较Canvas与SVG
+> ![](https://raw.githubusercontent.com/0ragdoll0/Front-end-Q-A/master/pic/Canvas%26SVG.PNG)
