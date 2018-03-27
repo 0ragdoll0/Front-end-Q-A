@@ -41,11 +41,11 @@
 >   元素之间的空白（回车、空格）也算字符。解决方法：删除空白、将父元素font-size设置为0、margin设置负值
 
 7. position的值及其定位原点是？
->     relative 相对于其正常位置
->     absolute 相对于其第一个不是static的父元素
->     inline 相对浏览器窗口
->     static 正常位置
->     inherit
+>   relative 相对于其正常位置
+>   absolute 相对于其第一个不是static的父元素
+>   fixed 相对浏览器窗口
+>   static 正常位置
+>   inherit
 
 8. 各种position元素的包含块
 > ![按此图判断](https://raw.githubusercontent.com/0ragdoll0/Front-end-Q-A/master/pic/containingblock.PNG)
@@ -78,8 +78,4 @@
 > 如果目标元素为table,visibility:collapse;将table隐藏,但是会占据页面布局空间.        
 > 仅在Firefox下起作用,IE会显示元素,Chrome会将元素隐藏,但是占据空间.
 
-14. JavaScript有几种类型的值？，你能画一下他们的内存图吗？        
-> 基本数据类型（undefined，null，boolean，number，string）和引用数据类型（object）       
-> 基本数据类型具有固定的内存大小，属于频繁使用数据，在栈中储存。        
-> 引用数据类型没有固定的内存大小，放在栈中会影响程序运行性能。寻找引用类数据时首先在栈中找寻其指针，根据其指针在堆中找到引用类数据。     
-> 图如下![](https://github.com/0ragdoll0/Front-end-Q-A/blob/master/pic/stackandheap.PNG)
+

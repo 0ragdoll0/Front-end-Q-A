@@ -12,3 +12,9 @@
 >     For循环必须使用大括号
 >     If语句必须使用大括号
 >     for-in循环中的变量 应该使用var关键字明确限定作用域，从而避免作用域污染。
+
+4. JavaScript有几种类型的值？，你能画一下他们的内存图吗？        
+> 基本数据类型（undefined，null，boolean，number，string）和引用数据类型（object）       
+> 基本数据类型具有固定的内存大小，属于频繁使用数据，在栈中储存。        
+> 引用数据类型没有固定的内存大小，放在栈中会影响程序运行性能。寻找引用类数据时首先在栈中找寻其指针，根据其指针在堆中找到引用类数据。     
+> 图如下![](https://github.com/0ragdoll0/Front-end-Q-A/blob/master/pic/stackandheap.PNG)
