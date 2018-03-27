@@ -78,8 +78,4 @@
 > 如果目标元素为table,visibility:collapse;将table隐藏,但是会占据页面布局空间.        
 > 仅在Firefox下起作用,IE会显示元素,Chrome会将元素隐藏,但是占据空间.
 
-14. JavaScript有几种类型的值？，你能画一下他们的内存图吗？        
-> 基本数据类型（undefined，null，boolean，number，string）和引用数据类型（object）       
-> 基本数据类型具有固定的内存大小，属于频繁使用数据，在栈中储存。        
-> 引用数据类型没有固定的内存大小，放在栈中会影响程序运行性能。寻找引用类数据时首先在栈中找寻其指针，根据其指针在堆中找到引用类数据。     
-> 图如下![](https://github.com/0ragdoll0/Front-end-Q-A/blob/master/pic/stackandheap.PNG)
+
