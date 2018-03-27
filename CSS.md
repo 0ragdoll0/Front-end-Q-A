@@ -43,7 +43,7 @@
 7. position的值及其定位原点是？
 >     relative 相对于其正常位置
 >     absolute 相对于其第一个不是static的父元素
->     inline 相对浏览器窗口
+>     fixed 相对浏览器窗口
 >     static 正常位置
 >     inherit
 
