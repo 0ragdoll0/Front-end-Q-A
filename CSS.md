@@ -79,3 +79,10 @@
 > 仅在Firefox下起作用,IE会显示元素,Chrome会将元素隐藏,但是占据空间.
 
 
+14. 清除浮动的方法
+* 利用clear属性
+> 1. 建立元素设置其clear:both           
+> 2. 给父元素设置:after伪元素，设置其属性（常用）。例：.clearfix:after{content: "020"; display: block; height: 0; clear: both; visibility: hidden;}.clearfix {/* 触发 hasLayout */ zoom: 1; }
+
+* 利用BFC
+> 设置父元素为float/overflow:hidden
