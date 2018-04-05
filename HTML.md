@@ -48,12 +48,13 @@
 
 10. html5有哪些新特性、移除了那些元素？如何处理HTML5新标签的浏览器兼容问题？如何区分 HTML 和 HTML5？
 * HTML5不是SGML子集，主要是关于图像，位置，储存，多任务等功能的增加
-> 绘画用canvas；媒介video和audio元素；
-> 本地离线存储localStorage长期存储数据，浏览器关闭后数据不丢失;
-> sessionStorage 的数据在浏览器关闭后自动删除;
-> 语义化内容元素：header,nav,article,section,aside,footer
-> 表单控件：calendar、date、time、email、url、search;
-> 新的技术：webworker, websocket, Geolocation;
+> 绘画用canvas；媒介video和audio元素；      
+> 本地离线存储localStorage长期存储数据，浏览器关闭后数据不丢失;       
+> sessionStorage 的数据在浏览器关闭后自动删除;      
+> 语义化内容元素：header,nav,article,section,aside,footer     
+> 表单控件：calendar、date、time、email、url、search;       
+> 新的表单元素：datalist keygen output
+> 新的技术：webworker, websocket, Geolocation;     
 
 * 移除的元素：
 > 纯表现的元素：basefont，big，center，font, s，strike，tt，u;
