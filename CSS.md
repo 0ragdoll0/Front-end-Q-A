@@ -86,3 +86,8 @@
 
 * 利用BFC
 > 设置父元素为float/overflow:hidden
+
+16. px,em,rem
+> px:页面缩放时无法调整的单位       
+> em:不固定，相对于父元素的字体大小,表示倍数
+> rem:不固定，相对于根元素<html>，表示倍数
