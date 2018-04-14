@@ -25,9 +25,32 @@
 ### UDP协议
 
 ### TCP协议
+## 重要的头部信息
+* Seq     
+> 该数据段序号，由发送方维护     
+> 接收方通过Seq对接收到的数据包进行排序
+* Len   
+> 数据段长度，不包括头    
+* ACK
+> 确认号，确认目前成功接收到对方已收到的字节。        
+> 接收方接收到多个数据包后，根据Seq排序后，相邻数据包X[n+1].Seq！=X[n].Seq+X[n].Len，接收方发回数据包ACK=X[n].Seq+X[n].Len请求重传        
+* SYN     
+> 表示正在建立连接，双发都会发送SYN      
+* FIN     
+> 表示正在终止连接，双发都会发送FIN      
+* RST     
+> 重置一个混乱的连接，或者拒绝一个无效的请求
+
+## 三次握手
+> ![如图](https://github.com/0ragdoll0/Front-end-Q-A/blob/master/pic/syn.jpg)
+
+## 四次挥手
+> ![如图](https://github.com/0ragdoll0/Front-end-Q-A/blob/master/pic/FIN.jpg)
+
 
 ## 应用层（数据格式）
 规定应用程序的数据格式
+### DNS协议
 
 # 访问网页
 ## 1.检查 HSTS 列表
