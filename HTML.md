@@ -9,7 +9,7 @@
 3. 行内元素有哪些？块级元素有哪些？ 空(void)元素有那些？
 >     (1)行内元素：span input select img a strong b 
 >     (2)快级元素：div h p ul ol li dl dt dd
->     (3)空元素：meta link input img br hr
+>     (3)空元素（无内容节点）：meta link input img br hr
 
 4. 页面导入样式时，使用link和@import有什么区别？**(RSS，加载顺序，兼容IE5)**
 >     (1)link属于XHTML标签，除了加载CSS外，还能用于定义RSS(Really Simple Syndication,简易信息聚合), 定义rel连接属性等作用；而@import是CSS提供的，只能用于加载CSS;
