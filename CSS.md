@@ -48,7 +48,8 @@
 >   inherit
 
 8. 各种position元素的包含块
-> ![按此图判断](https://raw.githubusercontent.com/0ragdoll0/Front-end-Q-A/master/pic/containingblock.PNG)
+> ![按此图判断](https://raw.githubusercontent.com/0ragdoll0/Front-end-Q-A/master/pic/containingblock.PNG)            
+> 包含块的重要性：一个元素的width，padding，margin，offset等用百分比来表示时，计算是基于其包含块的。（height, top, bottom 这些属性由包含块的 height 属性的值来计算它的百分值。如果包含块的 height 值依赖于它的内容，且包含块的 position 属性的值被赋予 relative 或 static的话，这些值的计算值为0。width, left, right, padding, margin这些属性由包含块的 width 属性的值来计算它的百分值。）
 
 9. 纯CSS创建一个三角形
 > 创建一个div将其宽高设置为0，设置border宽度且只显示某一条边->等腰三角形且高为border宽度
